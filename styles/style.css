@@ -1,25 +1,117 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+div {
+  outline: 1px solid red;
 }
 
 .header {
+  position: relative;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
+.logo {
+  width: 228px;
+  height: 32px;
+}
+
+.logo_place_header {
+  position: absolute;
+  margin-inline-start: 64px;
+  margin-block-start: 30px;
+  z-index: 5;
+}
+
+.title {
+  width: 730px;
+  height: 100%;
+}
+
+.header__title {
+  display: flex;
+  margin-inline-start: 64px;
+  align-items: center;
+}
+
+.header__title_text {
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: 600;
+  z-index: 4;
+}
+
+.subtitle {
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.header__subtitle {
+  position: absolute;
+  width: 388px;
+  bottom: 30px;
+  margin-inline-start: 64px;
+}
+
+.header__subtitle_text_small {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  z-index: 3;
+}
+
+.main-illustration {
+  position: absolute;
+  weight: 765px;
+  height: 608px;
+  right: 0;
+  bottom: 0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.header__main-illustration {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.square-pic {
+  position: absolute;
   height: 568px;
   width: 568px;
+  top: 64px;
+  right: 0;
+}
+
+.header__square-pic{
+  background-color: #2f80ed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.brief-title {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+.paragraph {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+.span-accent {
+  font-weight: 600;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -29,3 +121,4 @@
   margin-right: 0;
   margin-top: 80px;
 }
+
