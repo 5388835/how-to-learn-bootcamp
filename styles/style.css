@@ -65,12 +65,12 @@
 }
 
 .header__square-pic {
-  position: absolute;
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
   top: 64px;
   right: 0;
-  background-color: #2f80ed;
   z-index: 1;
 }
 
@@ -201,10 +201,10 @@
 }
 
 .feynman__link {
-  position: absolute;
   font-size: 36px;
   line-height: 51px;
   font-weight: normal;
+  position: absolute;
   right: 48px;
   top: 50%;
   transform: translateY(-50%);
@@ -231,12 +231,12 @@
 }
 
 .kaufman__triangle {
-  position: absolute;
   height: 877px;
   width: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
+  position: absolute;
   right: -210px;
   bottom: 0;  
-  background-image: url(../images/kaufman-triangle.svg);
   z-index: 1;
 }
 
