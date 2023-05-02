@@ -1,0 +1,8 @@
+.khan__book-pick {
+  display: block;
+  width: 620px;
+  height: 608px;
+  object-fit: cover;
+  object-position: top left;
+  margin: 0;
+}

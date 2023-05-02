@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="./index.css">
   <title>Научиться учиться</title>
 </head>
 <body class="root">
@@ -15,7 +15,7 @@
       <h1 class="header__title">Научиться учиться</h1>
       <h2 class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a class="header__link" href="#" target="_blank"> Узнать →</a></h2>
       <img class="header__main-illustration" src="./images/header-image.png" alt="Мальчик с картины Опять двойка">
-      <div class="header__square-pic"></div>
+      <div class="header__square-pic rotation"></div>
     </header>
     <main class="content">
       <section class="description">
@@ -23,7 +23,7 @@
           <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
           <div class="two-columns__main-text">
             <p class="two-columns__paragraph">Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест, но часто в итоге это не дает нам реального знания. Зубрежка быстро выветривается и не приносит пользы.</p>
-            <p class="two-columns__paragraph two-columns__paragraph_middle"><span class="two-columns__span-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?</p>
+            <p class="two-columns__paragraph"><span class="two-columns__span-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?</p>
             <p class="two-columns__paragraph">Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p>
           </div>
         </div>
@@ -31,29 +31,41 @@
       <section class="techniques">
         <h2 class="section-title">Техники обучения</h2>
         <p class="section-subtitle">Пять практик от Барбары Оакли</p>
-        <div class="cards">
-          <ul class="item"></li>
-            <li class="image"></li>
-            <li class="title"></li>
-            <li class="description"></li>
-          </ul>
-          <ul class="item"></li>
-            <li class="image"></li>
-            <li class="title"></li>
-            <li class="description"></li>
-          </ul>
-          <ul class="item"></li>
-            <li class="image"></li>
-            <li class="title"></li>
-            <li class="description"></li>
-          </ul>
-        </div>
+        <ul class="cards">
+          <li class="cards__item">
+            <img class="cards__image" src="./images/cards-attention.png" alt="Обложка книги с названием 101 эссе которые изменят ваш способ мышления">
+            <h3 class="cards__title">Два вида внимания</h3>
+            <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное мышление.</p>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="./images/cards-recall.png" alt="Мраморная скульптура мальчика, который задумчиво держит палочку">
+            <h3 class="cards__title">Recall</h3>
+            <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции памяти.</p>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="./images/cards-interliving.png" alt="Фото с лестницы большого помощения с людьми">
+            <h3 class="cards__title">Интерливинг</h3>
+            <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="./images/cards-question.png" alt="Мужчина в патио">
+            <h3 class="cards__title">Вопросы</h3>
+            <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="./images/cards-competence.png" alt="Несколько книг в руке">
+            <h3 class="cards__title">Иллюзия компетентности</h3>
+            <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</p>
+          </li>
+        </ul>
       </section>
       <section class="video">
-        <h2 class="section-title"></h2>
-        <p class="section-subtitle"></p>
-        <iframe width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU?controls=0" title="Тим Урбан: Внутри сознания мастера прокрастинации | TED" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" title="Джош Кауфман: первые 20 часов – как научиться чему угодно" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h2 class="section-title">Видео нa TED</h2>
+        <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
+        <div class="video__iframes">
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" title="Джош Кауфман: первые 20 часов – как научиться чему угодно" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU?controls=0" title="Тим Урбан: Внутри сознания мастера прокрастинации | TED" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
       </section>
       <section class="oakley">
         <div class="two-columns">
@@ -109,14 +121,15 @@
         </ul>
       </section>
       <section class="khan">
-        <div class="container">
-          <p class="author"></p>
-          <h2 class="title"></h2>
-          <p class="quote"></p>
-          <p class="quote-author"></p>
-          <div class="book-container">
-            <img class="book-pick">
-            <a class="buy-link"></a>
+        <div class="khan__container">
+          <p class="khan__author">Салман Хан</p>
+          <h2 class="khan__title">Весь мир — школа</h2>
+          <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
+          <p class="khan__quote-author">Джордж Лукас</p>
+          <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
+          <div class="khan__book-container">
+            <img class="khan__book-pick" src="images/khan-book.jpg" alt="Обложка книги Салман Хан Весь мир — школа">
+            <a class="khan__buy-link" href="#" target="_blank">Купить книгу →</a>
           </div>
         </div>
       </section>
@@ -165,30 +178,26 @@
             <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
           </li>
         </ul>
-        <div class="kaufman__triangle"></div>
+        <img class="kaufman__triangle rotation" src="./images/kaufman-triangle.svg" alt="Вращающийся треугольник">
       </section>
       <section class="resources">
-        <h2 class="section-title"></h2>
-        <p class="section-subtitle"></p>
-        <a class="resources__link"><img class="resources__logo-zone"></a>
-        <a class="resources__link"><img class="resources__logo-zone"></a>
-        <a class="resources__link"><img class="resources__logo-zone"></a>
-        <a class="resources__link"><img class="resources__logo-zone"></a>
-        <div class="resources resources__logo-zone">
-          <a class="resources__link"></a>
-          <a class="resources__link"></a>
-          <a class="resources__link"></a>
-          <a class="resources__link"></a>
+        <h2 class="section-title">Полезные ресурсы</h2>
+        <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
+        <div class="resources__logo-zone">
+          <a href="#" target="_blank"><img class="resources__link" src="./logo/resources-arzamas.svg" alt="Логотип Арзамаса"></a>
+          <a href="#" target="_blank"><img class="resources__link" src="./logo/resources-n1.svg" alt="Логотип Эн плюс 1"></a>
+          <a href="#" target="_blank"><img class="resources__link" src="./logo/resources-strelka.svg" alt="Логотип Стрелки"></a>
+          <a href="#" target="_blank"><img class="resources__link" src="./logo/resources-polka.svg" alt="Логотип Полки"></a>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__columns">
-        <div class="footer__column_content footer__column_content_copyright">
+        <div class="footer__column footer__column_content footer__column_content_copyright">
           <div class="logo logo_place_footer"></div>
           <p class="footer__author">&copy; Анна Дударева</p>
         </div>
-        <div class="footer__column_content footer__column_content_info">
+        <div class="footer__column footer__column_content footer__column_content_info">
           <h3 class="footer__column-heading">О Практикуме</h3>
           <nav class="footer__column-links">
               <a class="footer__column-link" href="#">Главная</a>
@@ -196,7 +205,7 @@
               <a class="footer__column-link" href="#">Наставники</a>
           </nav>
         </div>
-        <div class="footer__column_content footer__column_content_social">
+        <div class="footer__column footer__column_content footer__column_content_social">
           <h3 class="footer__column-heading">Соцсети</h3>
           <nav class="footer__column-links">
               <a class="footer__column-link" href="https://www.youtube.com/@yandex" target="_blank">
